@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+websockets
+python-dotenv
+pydantic>=2.10.6
+pipecat-ai[google,elevenlabs,silero]==1.17.0

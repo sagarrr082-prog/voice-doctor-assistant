@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@keyframes flashHighlight {
+  0% {
+    background-color: rgba(16, 185, 129, 0.22);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes flashCancel {
+  0% {
+    background-color: rgba(244, 63, 94, 0.2);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.row-flash-booked {
+  animation: flashHighlight 2.6s ease-out forwards;
+}
+
+.row-flash-cancelled {
+  animation: flashCancel 2.6s ease-out forwards;
+}
